@@ -1,8 +1,14 @@
+// Constante chamando o express instalado
 const express = require('express');
 const app = express();
+
+// Chamando o arquivo "operações" no index.js
 const operacoes = require('./operacoes');
+
+// Porta do servidor
 const port = 8080;
 
+app.get
 // Rota para somar
 app.get('/somar/:a/:b', function(req, res) {
     let primeiroNumero = parseInt(req.params.a);
